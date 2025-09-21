@@ -1,0 +1,91 @@
+<!-- DOM Document object model -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+
+
+
+<!--  document.getElementById('firstHeading').innerHTML = "<h1> Chai Aur Code </h1>" -->
+            <!--   this is dom manipulation-->
+
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+
+<!-- nodelist and html collections are not pure arrray bcuz here maps are not available here -->
+
+
+<!-- document.getElementById('title).id    // 'title' -->
+<!-- document.getElementById('title).class     //  undefined-->
+<!-- document.getElementById('title).className   // 'heading'  (thats why we use classsName in react) -->
+<!-- document.getElementById('title).getAttribute('id')     // 'title'-->
+<!-- document.getElementById('title).getAttribute('class')   // 'heading'-->
+<!-- document.getElementById('title).setAttribute('class' , 'test')   //undefined -->
+
+
+<!-- const title = document.getElementById('title) -->
+<!-- title.style.bgc = 'green' -->
+<!-- title.style.padding = 10px -->
+<!-- title.textContent   // Dom learning on Chai aur Code test text -->
+<!-- title.innerHTML   // DOM learning on Chai aur Code <span style="display: none;">test text</span> -->
+<!-- title.innerText   // Dom learning on Chai aur Code -->
+
+
+<!-- document.querySelector(h1)   // gives the first h1 in the page -->
+<!-- document.querySelector(#title)   //  selects the id-->
+<!-- document.querySelector(.heading)   //  selects the class -->
+<!-- document.querySelector('input[type = "password"]') -->
+
+
+<!-- document.querySelector('ul') -->
+<!-- const myul = document.querySelector('ul') -->
+<!-- myul.querySelector('li') -->
+<!-- turnGreen.style.bgc = "green" -->
+<!-- turnGreen.style.padding = "10px" -->
+
+
+
+
+<!-- document.querySelectorAll('li')  // selects all the lists-->
+<!-- const tempLiList = document.querySelectorAll('li')  // not a pure array is a nodelist though  -->
+<!-- tempLiList[0].style.color = 'green' -->
+<!-- const myH1 = document.querySelectorAll('h1') -->
+<!-- myH1[0].style.color = 'green' -->
+<!-- tempLiList.forEach(function(l){
+    l.style.bgc = "green"
+}) -->
+
+
+
+
+<!-- const tempClassList = document.getElementByClassName ('list_item')    // HTML Collection not a nodelist this time-->
+<!-- Array.from(tempClassList)    // now this is converted into an array -->
+<!-- const myConvertedArray = Array.from(tempClassList) -->
+
+
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur Code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
